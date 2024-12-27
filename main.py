@@ -1,3 +1,4 @@
+
 import pandas as pd
 import csv
 from datetime import datetime
@@ -117,8 +118,8 @@ def main():
         if choice == "1":
             add()
         elif choice == "2":
-            start_date = get_date("Enter the start date (mm-dd-yyy)")
-            end_date = get_date("Enter the end date (mm-dd-yyy)")
+            start_date = get_date("Enter the start date (mm-dd-yyyy)")
+            end_date = get_date("Enter the end date (mm-dd-yyyy)")
             df = CSV.get_transactions(start_date, end_date)
             if input("Do you want to see a plot? (y/n)").lower() == "y":
                 plot_transactions(df)
